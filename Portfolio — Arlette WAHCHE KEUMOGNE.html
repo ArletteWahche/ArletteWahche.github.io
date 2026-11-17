@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arlette Merveille WAHCHE KEUMOGNE — Portfolio</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f6f8fc;--card:#fff;--text:#1b2433;--muted:#5b6678;--accent:#1d4ed8;--band:#12306b;--line:#dde3ee;--tag:#e6edff;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1420;--card:#172033;--text:#e8edf6;--muted:#9aa7bd;--accent:#7aa2ff;--band:#0b1a3a;--line:#2a3550;--tag:#22305a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1420;--card:#172033;--text:#e8edf6;--muted:#9aa7bd;--accent:#7aa2ff;--band:#0b1a3a;--line:#2a3550;--tag:#22305a;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--band);color:#fff;padding:40px 20px 32px}
+.w{max-width:860px;margin:0 auto}
+h1{margin:0 0 4px;font-size:1.9rem;line-height:1.2}
+.role{font-size:1.1rem;opacity:.92;margin:0 0 14px}
+.contact{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.95rem}
+.contact a{color:#fff}
+main{padding:8px 20px 40px}
+section{margin-top:28px}
+h2{font-size:1.2rem;color:var(--accent);border-bottom:2px solid var(--line);padding-bottom:6px;margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px;break-inside:avoid}
+.card h3{margin:0 0 2px;font-size:1.05rem}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:8px}
+ul{margin:6px 0 0;padding-left:20px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tags span{background:var(--tag);color:var(--accent);border-radius:999px;padding:2px 10px;font-size:.82rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+p{margin:0 0 8px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 20px 28px}
+@media print{:root{padding:0;--bg:#fff;--card:#fff;--text:#1b2433;--muted:#5b6678;--accent:#1d4ed8;--band:#12306b;--line:#dde3ee;--tag:#e6edff}
+body{font-size:12px;-webkit-print-color-adjust:exact;print-color-adjust:exact}header{padding:24px 20px}section{margin-top:16px}.card{padding:10px 14px;margin-bottom:8px}footer{display:none}}
+@page{size:A4;margin:0}
+</style>
+</head>
+<body>
+<header><div class="w">
+<h1>Arlette Merveille WAHCHE KEUMOGNE</h1>
+<p class="role">Développeuse logiciel · Licence en informatique (2026)</p>
+<div class="contact"><span>📍 Douala, Cameroun</span><a href="mailto:wahchearlette821@gmail.com">✉️ wahchearlette821@gmail.com</a></div>
+</div></header>
+<main class="w">
+
+<section><h2>À propos</h2>
+<p>Jeune diplômée en informatique de l’Institut Supérieur Dale Kietzman (ISDK), j’ai effectué mon stage chez Kozao Technology, partenaire de Jalios à Douala. J’y ai conçu et développé une application de réservation de salles en Java EE, puis je l’ai repensée comme module natif pour la plateforme Jalios JCMS. J’aime le code propre, le travail en équipe et les projets concrets.</p>
+</section>
+
+<section><h2>Projets</h2>
+<div class="card"><h3>Module Gestion des Réservations des Salles de Réunion</h3>
+<div class="meta">Kozao Technology · Plugin Jalios JCMS · 2026</div>
+<p>Refonte complète de MeetReserve sous forme de module natif JCMS, avec trois rôles : employé, manager et directeur technique.</p>
+<ul><li>Nouvelles maquettes, diagrammes UML (cas d’utilisation, classes, séquence) et document de cadrage</li><li>Planification en sprints et lots sur Notion</li><li>Vues d’administration construites avec les composants Jalios</li></ul>
+<div class="tags"><span>Jalios JCMS</span><span>Java</span><span>UML</span><span>Notion</span></div></div>
+
+<div class="card"><h3>MeetReserve — gestion des réservations de salles</h3>
+<div class="meta">Kozao Technology · Projet de stage · 2026</div>
+<p>Application web Java EE de réservation de salles de réunion, avec trois tableaux de bord selon le rôle (employé, manager, administrateur).</p>
+<ul><li>Architecture MVC en couches : DAO → Service → Servlet → JSP, avec le patron Builder pour les DTO</li><li>Authentification sécurisée (mots de passe hachés avec BCrypt) et contrôle d’accès par rôle</li><li>Mise à jour automatique du statut des réservations passées</li><li>Gestion de versions avec Git (branches main, develop, feature)</li><li>Rapport de stage rédigé en anglais</li></ul>
+<div class="tags"><span>Servlets / JSP</span><span>PostgreSQL</span><span>Tomcat</span><span>Maven</span><span>Git</span></div></div>
+
+<div class="grid">
+<div class="card"><h3>ChatApp</h3><div class="meta">ISDK · 2023–2024</div><p>Application de messagerie réalisée pendant ma formation.</p></div>
+<div class="card"><h3>Calculatrice</h3><div class="meta">ISDK · 2024 – janvier 2025</div><p>Application de calcul développée pendant ma formation.</p></div>
+<div class="card"><h3>Site web de l’école</h3><div class="meta">ISDK</div><p>Conception du site web de l’Institut Supérieur Dale Kietzman.</p></div>
+<div class="card"><h3>Conception de logos</h3><div class="meta">Design graphique</div><p>Création de logos avec Photoshop et Illustrator.</p></div>
+</div></section>
+
+<section><h2>Compétences</h2>
+<div class="card"><p><b>Développement</b></p><div class="tags"><span>Java EE</span><span>Servlets / JSP</span><span>JSTL</span><span>PostgreSQL</span><span>Tomcat</span><span>Jalios JCMS</span><span>Visual Studio Code</span><span>Eclipse</span></div></div>
+<div class="card"><p><b>Outils</b></p><div class="tags"><span>Git</span><span>GitLab</span><span>Maven</span><span>SonarQube</span><span>Notion</span><span>Linux (Ubuntu)</span><span>Microsoft Office</span></div></div>
+<div class="card"><p><b>Design</b></p><div class="tags"><span>Photoshop</span><span>Illustrator</span></div></div>
+<div class="card"><p><b>Qualités</b></p><div class="tags"><span>Adaptabilité</span><span>Travail d’équipe</span><span>Leadership</span></div></div>
+</section>
+
+<section><h2>Expérience</h2>
+<div class="card"><h3>Stagiaire développeuse · Kozao Technology</h3><div class="meta">Douala · 2026</div>
+<ul><li>Développement de MeetReserve, puis du module JCMS qui en découle</li><li>Formation à l’administration de Jalios JPlatform / JCMS (espaces de travail, catégories, workflows, portlets)</li><li>Leader du groupe d’entraide de mon équipe de stage, et relais sur leurs tâches en cas d’absence</li></ul></div>
+</section>
+
+<section><h2>Formation et langues</h2>
+<div class="grid">
+<div class="card"><h3>Licence en informatique</h3><div class="meta">ISDK · 2023–2026</div></div>
+<div class="card"><h3>GCE Advanced Level</h3><div class="meta">PBCC · 2023</div></div>
+<div class="card"><h3>GCE Ordinary Level</h3><div class="meta">GBHS Nyalla · 2021</div></div>
+<div class="card"><h3>Langues</h3><div class="meta">Français : avancé · Anglais : avancé · Allemand : débutant</div></div>
+</div></section>
+
+<section><h2>Me contacter</h2>
+<p>Je suis disponible pour un poste de développeuse junior à Douala ou à distance : <a href="mailto:wahchearlette821@gmail.com" style="color:var(--accent)">wahchearlette821@gmail.com</a></p></section>
+</main>
+<footer>© 2026 Arlette Merveille WAHCHE KEUMOGNE</footer>
+</body>
+</html>
